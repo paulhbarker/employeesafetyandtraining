@@ -6423,3 +6423,61 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 nav .brand-logo {
   font-size: 1.6rem; }
+
+.heavy {
+  font-weight: 600; }
+
+.getting-started-steps {
+  text-align: center;
+  font-size: 170%;
+  font-weight: 300; }
+  .getting-started-steps li {
+    margin: 1rem; }
+  .getting-started-steps li.username {
+    margin: 0;
+    margin-top: 1.5rem; }
+  .getting-started-steps li.password {
+    margin: 0;
+    margin-bottom: 1.5rem; }
+
+.hero {
+  height: calc(100vh - 64px);
+  padding: 2rem;
+  margin-bottom: -2px;
+  background: url("../img/cityscape.svg");
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  @media only screen and (min-width: 993px) {
+    .hero {
+      padding: 4rem 10rem; } }
+
+.bg--dark {
+  background-color: #1f272d; }
+
+.bg--light {
+  background-color: #039be5; }
+
+.bg--leader {
+  background: url("../img/leader.svg") top center/50px 20px no-repeat; }
+
+.course-panel {
+  text-align: center;
+  margin: 2rem 0; }
+  .course-panel .category {
+    font-size: 140%; }
+  .course-panel .number {
+    font-size: 300%; }
+  .course-panel .label {
+    margin-top: -14px; }
+
+.pad-lg {
+  padding: 10rem 0; }
+
+.pad-md {
+  padding: 5rem 0; }
+
+.pad-sm {
+  padding: 2rem; }
+
+.no-margin-bot {
+  margin-bottom: 0 !important; }

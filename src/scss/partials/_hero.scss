@@ -1,0 +1,12 @@
+.hero {
+	height: calc(100vh - 64px);
+	padding: 2rem;
+	margin-bottom: -2px;
+	background: url('../img/cityscape.svg');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	
+	@media #{$large-and-up} {
+		padding: 4rem 10rem;
+	}
+}

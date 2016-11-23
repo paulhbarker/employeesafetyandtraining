@@ -1,0 +1,17 @@
+.bg {
+
+	&--dark {
+		background-color: #1f272d;
+	}
+
+	&--light {
+		background-color: #039be5;
+	}
+
+	&--leader {
+		background: 
+			url('../img/leader.svg')
+			top center / 50px 20px
+			no-repeat;
+	}
+}
