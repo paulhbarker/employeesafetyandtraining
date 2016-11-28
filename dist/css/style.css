@@ -6470,6 +6470,26 @@ nav .brand-logo {
   .course-panel .label {
     margin-top: -14px; }
 
+.blurb {
+  height: 70vh;
+  color: white;
+  text-align: center; }
+  .blurb .content {
+    margin-top: 20vh; }
+  .blurb .small-title {
+    font-size: 90%;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .blurb .title {
+    font-size: 300%;
+    line-height: 3rem; }
+  .blurb hr {
+    width: 8%;
+    margin: 1.8rem auto 1.1rem; }
+  .blurb .description {
+    margin: 0 3.5rem; }
+
 .pad-lg {
   padding: 10rem 0; }
 
@@ -6481,3 +6501,6 @@ nav .brand-logo {
 
 .no-margin-bot {
   margin-bottom: 0 !important; }
+
+.no-pad {
+  padding: 0 !important; }
