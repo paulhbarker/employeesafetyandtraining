@@ -6504,3 +6504,24 @@ nav .brand-logo {
 
 .no-pad {
   padding: 0 !important; }
+
+.contact-card {
+  background: #fff;
+  margin-top: 50px; }
+  .contact-card:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .contact-card img {
+    width: 100%;
+    height: auto; }
+    @media screen and (min-width: 500px) {
+      .contact-card img {
+        width: auto;
+        float: left;
+        height: 250px;
+        margin-right: 2rem; } }
+  .contact-card .info {
+    margin: 2rem; }
+  .contact-card h3 {
+    font-weight: 200; }

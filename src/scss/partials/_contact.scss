@@ -1,0 +1,30 @@
+.contact-card {
+	@include clearfix;
+	background: #fff;
+	margin-top: 50px;
+
+	img {
+		width: 100%;
+		height: auto;
+
+		@media screen and (min-width: 500px) {
+			width: auto;
+			float: left;
+			height: 250px;
+			margin-right: 2rem;
+		}
+	}
+
+	.info {
+		margin: 2rem;
+	}
+
+	ul {
+
+	}
+
+	h3 {
+		font-weight: 200;
+	}
+	
+}
