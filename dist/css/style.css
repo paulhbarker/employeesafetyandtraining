@@ -6457,6 +6457,11 @@ nav .brand-logo {
 .bg--light {
   background-color: #039be5; }
 
+.bg--light-grey {
+  background-color: #f7f7f7;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5; }
+
 .bg--leader {
   background: url("../img/leader.svg") top center/50px 20px no-repeat; }
 
@@ -6466,6 +6471,12 @@ nav .brand-logo {
   background-position: top center;
   background-attachment: scroll;
   background-size: cover; }
+
+.hero h1 {
+  font-size: 40px; }
+  @media screen and (min-width: 720px) {
+    .hero h1 {
+      font-size: 60px; } }
 
 .course-panel {
   text-align: center;
@@ -6497,20 +6508,19 @@ nav .brand-logo {
   .blurb .description {
     margin: 0 3.5rem; }
 
-.video-card {
-  box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 2rem; }
-  .video-card i {
-    color: #2196F3;
-    text-align: center;
-    display: block;
-    padding: 40px 0 10px; }
-  .video-card p {
-    margin-top: 0;
-    text-align: center;
-    font-size: 26px;
-    height: 80px; }
+.video-sample {
+  margin-bottom: 40px; }
+  .video-sample h2 {
+    weight: 400;
+    font-size: 20px;
+    text-align: center; }
+
+.how-works video {
+  display: block;
+  margin: auto; }
+  @media screen and (min-width: 900px) {
+    .how-works video {
+      max-width: 50%; } }
 
 .pricing-table {
   box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.1);
@@ -6536,6 +6546,9 @@ nav .brand-logo {
         border: none; }
   .pricing-table a {
     margin-bottom: 30px; }
+
+.firetruck {
+  width: 100%; }
 
 .pad-lg {
   padding: 10rem 0; }
@@ -6593,3 +6606,8 @@ nav .brand-logo {
         border: none; }
       .contact-card .buttons a:hover, .contact-card .buttons a:focus, .contact-card .buttons a:active {
         color: #1a7fd0; }
+
+video {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.1); }
