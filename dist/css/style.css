@@ -6523,10 +6523,12 @@ nav .brand-logo {
       max-width: 50%; } }
 
 .pricing-table {
-  box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.17);
+  box-shadow: 0 8px 20px -6px rgba(0, 0, 0, 0.5);
   max-width: 350px;
   margin: 40px auto;
-  padding: 20px; }
+  padding: 20px;
+  opacity: 0; }
   .pricing-table:after {
     content: "";
     display: table;
@@ -6553,8 +6555,14 @@ nav .brand-logo {
 .pad-lg {
   padding: 10rem 0; }
 
+.pad-before-md {
+  padding-top: 5rem; }
+
 .pad-md {
   padding: 5rem 0; }
+
+.pad-after-md {
+  padding-bottom: 5rem; }
 
 .pad-sm {
   padding: 2rem; }
@@ -6611,3 +6619,57 @@ video {
   width: 100%;
   height: auto;
   box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.1); }
+
+a.btn-large + a.btn-large {
+  margin: 10px; }
+
+#modal1-button,
+#modal2-button,
+#osha-contact {
+  opacity: 0; }
+
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  to {
+    opacity: 1; } }
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn; }
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft; }
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    opacity: 0; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight; }
