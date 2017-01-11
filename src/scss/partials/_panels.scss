@@ -73,6 +73,16 @@
 	}
 }
 
+#how-it-works {
+	max-width: 60%;
+	margin: auto; 
+	
+	p {
+		font-size: 22px;
+	}
+
+}
+
 .pricing-table {
 	@include clearfix;
 	border: 1px solid rgba(0,0,0,.17);
