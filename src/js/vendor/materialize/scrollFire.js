@@ -25,16 +25,17 @@
                 callback = value.callback;
 
             var currentElement = document.querySelector(selector);
+            console.log(currentElement);
             if ( currentElement !== null) {
-              var elementOffset = currentElement.getBoundingClientRect().top + window.pageYOffset;
+              var elementOffset = currentElement[0].getBoundingClientRect().top + window.pageYOffset;
 
               if (windowScroll > (elementOffset + offset)) {
                 if (value.done !== true) {
                   if (typeof(callback) === 'function') {
-                    callback.call(this, currentElement);
+                    callback.call(this, currentElement[0]);
                   } else if (typeof(callback) === 'string') {
                     var callbackFunc = new Function(callback);
-                    callbackFunc(currentElement);
+                    callbackFunc(currentElement[0]);
                   }
                   value.done = true;
                 }

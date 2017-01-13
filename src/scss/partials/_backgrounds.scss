@@ -1,7 +1,10 @@
 .bg {
 
 	&--dark {
+		position: relative;
 		background-color: #1f272d;
+
+		
 	}
 
 	&--light {
@@ -32,5 +35,21 @@
         background-position: top center;
         background-attachment: scroll;
         background-size: cover;
+	}
+}
+
+#courses {
+	&::after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		margin: auto;
+		left: 0;
+		right: 0;
+		width: 0; 
+		height: 0; 
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		border-top: 25px solid #1f272d;
 	}
 }

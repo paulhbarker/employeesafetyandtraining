@@ -10,6 +10,7 @@
 .course-panel {
 	text-align: center;
 	margin: 2rem 0;
+	z-index: 2;
 
 	.category {
 		font-size: 140%;
@@ -22,10 +23,18 @@
 	}
 }
 
+#construction {
+	opacity: 0;
+	p {
+		margin: 1.8rem 0 2.2rem;
+	}
+}
+
 .blurb {
 	height: 70vh;
 	color: white;
 	text-align: center;
+	opacity: 0;
 
 	.content {
 		margin-top: 20vh;
@@ -55,7 +64,7 @@
 
 .video-sample {
 	margin-bottom: 40px;
-	h2 {
+	h3 {
 		weight: 400;
 		font-size: 20px;
 		text-align: center;
@@ -74,8 +83,15 @@
 }
 
 #how-it-works {
-	max-width: 60%;
-	margin: auto; 
+
+	.container {
+
+		@media screen and (min-width: 800px) {
+			max-width: 30%;
+			min-width: 500px;
+			margin: auto;
+		}
+	}
 	
 	p {
 		font-size: 22px;

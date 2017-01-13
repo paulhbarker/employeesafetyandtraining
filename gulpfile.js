@@ -19,7 +19,7 @@ var paths = {
 gulp.task('scripts', function() {
   return gulp.src([
     /* Add your JS files here, they will be combined in this order */
-    'src/js/vendor/materialize/bin/materialize.min.js',
+    'src/js/vendor/materialize/bin/materialize.js',
     'src/js/app.js'
     ])
     .pipe(concat('all.js'))
@@ -63,7 +63,7 @@ gulp.task('default', ['sass', 'scripts', 'browser-sync'], function () {
     /* Watch scss, run the sass task on change. */
     gulp.watch(['src/scss/*.scss', 'src/scss/**/*.scss'], ['sass'])
     /* Watch app.js file, run the scripts task on change. */
-    gulp.watch(['src/js/app.js'], ['scripts'])
+    gulp.watch(['src/js/app.js', 'src/js/vendor/materialize/bin/materialize.js'], ['scripts'])
     /* Watch .html files, run the bs-reload task on change. */
     gulp.watch(['dist/*.html'], ['bs-reload']);
 });
